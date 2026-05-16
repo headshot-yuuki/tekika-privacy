@@ -32,7 +32,7 @@
 <!-- 日本語 -->
 <div id="japanese">
 <h1>プライバシーポリシー</h1>
-<p class="date">最終更新日: 2026年5月6日</p>
+<p class="date">最終更新日: 2026年5月16日</p>
 
 <div class="section">
 <h2>1. はじめに</h2>
@@ -44,16 +44,20 @@
 <p>本アプリは以下の情報を収集する場合があります。</p>
 <ul>
     <li><strong>ユーザーが入力するデータ:</strong> スケジュール、手書きメモ、付箋テキストなど。これらのデータは端末内およびiCloud（Apple CloudKit）に保存されます。</li>
-    <li><strong>広告に関する情報:</strong> 本アプリはGoogle AdMobを使用してバナー広告を表示します。AdMobは広告配信のためにデバイス識別子等を収集する場合があります。詳細は<a href="https://policies.google.com/privacy" target="_blank">Googleのプライバシーポリシー</a>をご参照ください。</li>
-    <li><strong>購入情報:</strong> App内課金（広告除去・背景カスタマイズ）の購入状態はAppleのStoreKitを通じて管理されます。</li>
+    <li><strong>バックアップデータ:</strong> 「今すぐバックアップ」機能を使用した場合、データは .tekibak ファイルとして iCloud Drive（Appleのファイルシステム）に保存されます。バックアップファイルには、復元時の参照のためにバックアップ作成時点の端末名・機種・OSバージョンが記録されます。また、バックアップの送信元端末を識別するためにアプリ固有の識別子（appDeviceId）が記録されます。appDeviceId はアプリ初回起動時にランダムに生成されたUUIDであり、ユーザーの個人情報とは紐づいておらず、第三者に提供されることはありません。</li>
+    <li><strong>ウィジェット用画像:</strong> ホーム画面ウィジェットの表示のため、月間カレンダーのスクリーンショットを端末内（App Group）に保存します。このデータは端末外に送信されません。</li>
+    <li><strong>広告に関する情報:</strong> 本アプリはGoogle AdMobを使用してバナー広告を表示します（無料版のみ）。広告のパーソナライズにはApp Tracking Transparency（ATT）フレームワークを通じてユーザーの同意を取得します。同意しない場合も広告は表示されますが、パーソナライズされません。AdMobが収集するデータの詳細は<a href="https://policies.google.com/privacy" target="_blank">Googleのプライバシーポリシー</a>をご参照ください。</li>
+    <li><strong>購入情報:</strong> App内課金（広告除去・背景カスタマイズ）の購入状態はAppleのStoreKitを通じて管理されます。開発者は購入内容にアクセスできません。</li>
 </ul>
 </div>
 
 <div class="section">
 <h2>3. データの利用目的</h2>
 <ul>
-    <li>スケジュール管理機能の提供</li>
+    <li>スケジュール管理・手書きメモ機能の提供</li>
     <li>iCloudを通じたデバイス間のデータ同期</li>
+    <li>iCloud Driveへのバックアップ作成および復元</li>
+    <li>ホーム画面ウィジェットへのカレンダー表示</li>
     <li>広告の表示（無料版のみ）</li>
     <li>App内課金の管理</li>
 </ul>
@@ -63,7 +67,7 @@
 <h2>4. データの共有</h2>
 <p>本アプリはユーザーの個人データを第三者に販売、共有、または提供することはありません。ただし、以下の場合を除きます。</p>
 <ul>
-    <li>広告配信パートナー（Google AdMob）への広告関連データの提供</li>
+    <li>広告配信パートナー（Google AdMob）への広告関連データの提供（ATT同意時のみパーソナライズ広告）</li>
     <li>Apple iCloudを通じたデータ同期（ユーザーの同一Apple IDアカウント内のみ）</li>
 </ul>
 </div>
@@ -72,10 +76,12 @@
 <h2>5. データの保存</h2>
 <p>ユーザーのスケジュールデータ、手書きデータ、付箋データは以下の場所に保存されます。</p>
 <ul>
-    <li>端末のローカルストレージ</li>
+    <li>端末のローカルストレージ（SwiftData）</li>
     <li>Apple iCloud（CloudKit）- デバイス間同期のため</li>
+    <li>Apple iCloud Drive - バックアップファイル（.tekibak）の保存のため</li>
+    <li>App Group共有領域 - ホーム画面ウィジェット表示用データ（端末内のみ）</li>
 </ul>
-<p>アプリの設定画面から全データを削除することができます。</p>
+<p>アプリの設定画面から、端末内のデータおよびiCloudのデータ（バックアップを含む）を削除することができます。</p>
 </div>
 
 <div class="section">
@@ -100,7 +106,7 @@
 <!-- English -->
 <div id="english">
 <h1>Privacy Policy</h1>
-<p class="date">Last updated: May 6, 2026</p>
+<p class="date">Last updated: May 16, 2026</p>
 
 <div class="section">
 <h2>1. Introduction</h2>
@@ -112,16 +118,20 @@
 <p>The App may collect the following information:</p>
 <ul>
     <li><strong>User-entered data:</strong> Schedules, handwritten notes, and sticky note text. This data is stored on your device and in iCloud (Apple CloudKit).</li>
-    <li><strong>Advertising information:</strong> The App uses Google AdMob to display banner ads. AdMob may collect device identifiers for ad delivery. See <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> for details.</li>
-    <li><strong>Purchase information:</strong> In-App Purchase status (ad removal and background customization) is managed through Apple's StoreKit.</li>
+    <li><strong>Backup data:</strong> When you use the "Back Up Now" feature, your data is saved as a .tekibak file in iCloud Drive (Apple's file system). Backup files include the device name, model, and OS version at the time of backup for reference during restoration. They also include an app-generated device identifier (appDeviceId) used to identify the source device of a backup. The appDeviceId is a randomly generated UUID created at first launch; it is not linked to your personal identity and is never shared with third parties.</li>
+    <li><strong>Widget image data:</strong> To display the home screen widget, a screenshot of the monthly calendar is saved locally in the App Group container. This data is never sent outside your device.</li>
+    <li><strong>Advertising information:</strong> The App uses Google AdMob to display banner ads (free version only). For personalized ads, the App requests your consent via Apple's App Tracking Transparency (ATT) framework. If you decline, ads will still be shown but will not be personalized. For details on data collected by AdMob, see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</li>
+    <li><strong>Purchase information:</strong> In-App Purchase status (ad removal and background customization) is managed through Apple's StoreKit. The developer does not have access to your purchase details.</li>
 </ul>
 </div>
 
 <div class="section">
 <h2>3. How We Use Your Data</h2>
 <ul>
-    <li>Providing schedule management features</li>
+    <li>Providing schedule management and handwriting features</li>
     <li>Syncing data across devices via iCloud</li>
+    <li>Creating and restoring backups via iCloud Drive</li>
+    <li>Displaying the monthly calendar on the home screen widget</li>
     <li>Displaying advertisements (free version only)</li>
     <li>Managing In-App Purchases</li>
 </ul>
@@ -131,7 +141,7 @@
 <h2>4. Data Sharing</h2>
 <p>The App does not sell, share, or provide your personal data to third parties, except:</p>
 <ul>
-    <li>Advertising-related data to Google AdMob for ad delivery</li>
+    <li>Advertising-related data to Google AdMob for ad delivery (personalized ads only when ATT consent is granted)</li>
     <li>Data sync via Apple iCloud (within your own Apple ID account only)</li>
 </ul>
 </div>
@@ -140,10 +150,12 @@
 <h2>5. Data Storage</h2>
 <p>Your schedule data, handwriting data, and sticky notes are stored in:</p>
 <ul>
-    <li>Local storage on your device</li>
+    <li>Local storage on your device (SwiftData)</li>
     <li>Apple iCloud (CloudKit) - for cross-device syncing</li>
+    <li>Apple iCloud Drive - for backup files (.tekibak)</li>
+    <li>App Group shared container - for home screen widget display (on-device only)</li>
 </ul>
-<p>You can delete all data from the Settings screen within the App.</p>
+<p>You can delete data on your device, or delete all data including iCloud backups, from the Settings screen within the App.</p>
 </div>
 
 <div class="section">
