@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "announcements": [
+    {
+      "id": "v3-shared-calendar",
+      "title": "共有カレンダー機能を追加しました",
+      "body": "家族や友達とカレンダーを共有できるようになりました。設定から「カレンダー」を開いて試してみてください。",
+      "type": "update",
+      "startDate": "2026-08-21T00:00:00Z",
+      "endDate": null,
+      "linkURL": null
+    },
+    {
+      "id": "v3-pencil-update",
+      "title": "Apple Pencil対応を強化しました",
+      "body": "ダブルタップ・スクイーズ・2本指アンドゥに対応しました",
+      "type": "update",
+      "startDate": "2026-08-18T00:00:00Z",
+      "endDate": null,
+      "linkURL": null
+    }
+  ]
+}
