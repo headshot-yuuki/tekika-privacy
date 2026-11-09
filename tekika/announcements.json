@@ -2,6 +2,22 @@
   "version": 1,
   "announcements": [
     {
+      "id": "v4-widget-sync-improved",
+      "title": "ウィジェットと同期を改善しました",
+      "body": "ウィジェットへの手書き反映や端末間同期を大幅に改善しました。また、共有カレンダーの招待を数字コードで行えるようになりました。",
+      "type": "update",
+      "minVersion": "1.2.0",
+      "startDate": "2026-11-09T00:00:00Z",
+      "endDate": null,
+      "linkURL": null,
+      "localizations": {
+        "en": {
+          "title": "Widget & sync improvements",
+          "body": "Handwriting now reflects in widgets more reliably, and cross-device sync has been greatly improved. You can now invite others to shared calendars with a numeric code."
+        }
+      }
+    },
+    {
       "id": "v4-widget-sync-update",
       "title": "アップデートを準備中です",
       "body": "ウィジェットや端末間の同期を改善したアップデートを近日中に公開予定です。現在ご不便をおかけして申し訳ありません。もうしばらくお待ちください。",
