@@ -9,7 +9,13 @@
       "maxVersion": "1.1.2",
       "startDate": "2026-10-26T00:00:00Z",
       "endDate": "2027-01-31T00:00:00Z",
-      "linkURL": null
+      "linkURL": null,
+      "localizations": {
+        "en": {
+          "title": "Update coming soon",
+          "body": "We're working on an update to improve widgets and cross-device sync. We apologize for the inconvenience. Please wait a little longer."
+        }
+      }
     },
     {
       "id": "v3-shared-calendar",
@@ -18,7 +24,13 @@
       "type": "update",
       "startDate": "2026-08-21T00:00:00Z",
       "endDate": null,
-      "linkURL": null
+      "linkURL": null,
+      "localizations": {
+        "en": {
+          "title": "Shared calendars are now available",
+          "body": "You can now share your calendar with family and friends. Open \"Calendar\" in Settings to get started."
+        }
+      }
     },
     {
       "id": "v3-pencil-update",
@@ -27,7 +39,13 @@
       "type": "update",
       "startDate": "2026-08-18T00:00:00Z",
       "endDate": null,
-      "linkURL": null
+      "linkURL": null,
+      "localizations": {
+        "en": {
+          "title": "Improved Apple Pencil support",
+          "body": "Now supports double tap, squeeze, and two-finger undo."
+        }
+      }
     }
   ]
 }
